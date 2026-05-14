@@ -1,8 +1,18 @@
 # AI BI Analyst
 
-Welcome to the **AI BI Analyst**! This project is a cutting-edge, dataset-agnostic Business Intelligence tool built with a modern "Gen-Z startup" aesthetic (inspired by the beautiful *Everforest* color palette). 
+AI BI Analyst is an intelligent business analytics system that enables users to interact with databases using natural language instead of writing complex SQL queries manually. The system acts as an AI-powered business intelligence assistant capable of understanding user questions, generating optimized SQL queries, retrieving relevant data, creating visualizations, and producing automated analytical insights.
 
-Instead of writing complex SQL queries, users can simply ask business questions in plain English. The app translates the question to PostgreSQL, safely executes it, and visually displays the data alongside a conversational AI-generated insight.
+The project aims to simplify data analysis for non-technical users by combining Large Language Models (LLMs), natural language processing, database systems, and interactive dashboards into a unified platform. Users can ask business-related questions such as:
+
+- “Which products generated the highest revenue this quarter?”
+- “Why did sales decrease last month?”
+- “Show top-performing regions by profit.”
+
+The system converts these queries into executable SQL statements, fetches data from a relational database, and presents the results through tables, charts, and AI-generated summaries. Additionally, the application explains generated SQL queries in simple language, making data analytics more accessible and transparent.
+
+The backend is developed using Python and FastAPI, while the frontend is built using React and Tailwind CSS for an interactive user experience. Open-source Large Language Models such as Llama 3 or Mistral are integrated using Ollama or Groq API to ensure low-cost and scalable AI functionality. PostgreSQL is used as the primary database for structured data storage and querying.
+
+The project demonstrates the integration of artificial intelligence, business intelligence, database management, data visualization, and full-stack development to create a practical, real-world analytics solution. It is designed to reduce dependency on technical analysts and enable faster, data-driven decision-making for businesses.
 
 ---
 
@@ -33,7 +43,6 @@ ai-bi-analyst/
     └── package.json       # React dependencies
 ```
 
-*(Note: If you see any scratch folders or old CSV files locally, they are not strictly part of the core app's architecture!)*
 
 ---
 
@@ -66,7 +75,7 @@ npm run dev
 Because the AI BI Analyst is **Dataset-Agnostic**, it dynamically reads the schema of whatever database you point it to. You do not need to change any Python or React code to query new data!
 
 1. **Load Data into Postgres**
-   Create a new table in your PostgreSQL database (e.g., using pgAdmin, `psql`, or a Python script using pandas `.to_sql()`). You can import any CSV you want (like Sales data, HR records, or Walmart retail datasets).
+   Create a new table in your PostgreSQL database (e.g., using pgAdmin, `psql`, or a Python script using pandas `.to_sql()`). You can import any CSV you want (like Sales data, HR records, or any other datasets).
    
 2. **Update your `.env` (If needed)**
    Ensure your `backend/.env` file points to the correct database:
