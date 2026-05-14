@@ -88,6 +88,13 @@ Because the AI BI Analyst is **Dataset-Agnostic**, it dynamically reads the sche
    Go to the UI and ask a question explicitly naming your table or its contents. For example: *"In the HR table, what is the average salary by department?"* The backend will fetch your new columns, generate the SQL, and display the new charts instantly!
 
 ---
+## Screenshots of the Application
+
+![Screenshot 1](screenshots/Snapshot.png)
+![Screenshot 2](screenshots/Snapshot(1).png)
+
+
+---
 
 ## Tech Stack
 * **Frontend:** React, Vite, Tailwind CSS (v3), Recharts, Lucide-React
