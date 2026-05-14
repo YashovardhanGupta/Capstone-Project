@@ -8,7 +8,7 @@ Instead of writing complex SQL queries, users can simply ask business questions 
 
 ## System Architecture
 
-![System Architecture](.\screenshots\flowchart-fun.png)
+![System Architecture](screenshots/flowchart-fun.png)
 
 ---
 
