@@ -5,6 +5,8 @@ backend/env/
 frontend/.env
 frontend/.env.local
 frontend/.env.*.local
+databse/
+
 
 # Python
 __pycache__/
